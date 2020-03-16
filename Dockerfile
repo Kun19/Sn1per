@@ -1,4 +1,4 @@
-FROM kalilinux/kali-linux-docker
+FROM kalilinux/kali-rolling
 
 LABEL org.label-schema.name='Sn1per - Kali Linux' \
     org.label-schema.description='Automated pentest framework for offensive security experts' \
@@ -26,7 +26,7 @@ RUN sed -i 's/systemctl status ${PG_SERVICE}/service ${PG_SERVICE} status/g' /us
 RUN apt-get --yes install git \
     && mkdir -p security \
     && cd security \
-    && git clone https://github.com/1N3/Sn1per.git \
+    && git clone https://github.com/Kun19/Sn1per.git \
     && cd Sn1per \
     && ./install.sh \
     && sniper -u force
