@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SLACK_API_TOKEN=$(grep SLACK_API_TOKEN ~/.sniper.conf | cut -d\" -f2)
-SLACK_CHANNEL="sn1per-professional"
+SLACK_CHANNEL="hacking-recon"
 MESSAGE="$1"
 
 if [ "$MESSAGE" == "postfile" ]; then
