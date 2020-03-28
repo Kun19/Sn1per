@@ -123,7 +123,7 @@ pip3 install -r $PLUGINS_DIR/dnscan/requirements.txt
 git clone https://github.com/infosec-au/altdns.git
 cd altdns
 pip install -r requirements.txt
-python2 setup.py install
+python3 setup.py install
 pip install py-altdns
 cd ..
 git clone https://github.com/blechschmidt/massdns.git
